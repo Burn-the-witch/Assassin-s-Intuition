@@ -1,0 +1,291 @@
+{
+	"tempHash": "00DDCC74AD917CAA",
+	"tbluHash": "003321F66074B4AB",
+	"patch": [
+		{
+			"AddEntity": [
+				"cafeae993d0d8764",
+				{
+					"parent": "0594561be5ddfb63",
+					"name": "Set IActor for death check",
+					"factory": "[modules:/zgameeventlistenerentity.class].pc_entitytype",
+					"blueprint": "[modules:/zgameeventlistenerentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eEvent": {
+							"type": "EGameEventType",
+							"value": "GET_IntroCutEnd"
+						}
+					},
+					"events": {
+						"EventOccurred": {
+							"GetIActor": ["cafe3b3f6bc18b73"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3b3f6bc18b73",
+				{
+					"parent": "cafeae993d0d8764",
+					"name": "Prox",
+					"factory": "[modules:/zactorproxyentity.class].pc_entitytype",
+					"blueprint": "[modules:/zactorproxyentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": "0594561be5ddfb63"
+						}
+					},
+					"events": {
+						"OnGetIActor": {
+							"SetIActor": ["cafebc01c5291b4c"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebc01c5291b4c",
+				{
+					"parent": "cafe3b3f6bc18b73",
+					"name": "ActorDeath",
+					"factory": "[modules:/zactordeathentity.class].pc_entitytype",
+					"blueprint": "[modules:/zactordeathentity.class].pc_entityblueprint",
+					"properties": {
+						"m_rActor": {
+							"type": "SEntityTemplateReference",
+							"value": null
+						}
+					},
+					"events": {
+						"OnAccidentDeath": {
+							"TransmitEvent": ["cafe7637ac6f143f"]
+						},
+						"OnMurdered": { "In": ["cafefe650c339013"] },
+						"OnBodyNoticed": {
+							"SetTrue": ["cafe816b06aef04d"]
+						},
+						"OnPacified": {
+							"SetTrue": ["cafe171584a48185"],
+							"In": ["cafef399fa52ee33"]
+						},
+						"IActor": { "SetIActor": [] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe171584a48185",
+				{
+					"parent": "cafe7093782513ce",
+					"name": "Pacified?",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7637ac6f143f",
+				{
+					"parent": "cafebc01c5291b4c",
+					"name": "Event Transmitter",
+					"factory": "0037A7E362011A78",
+					"blueprint": "003D29EFE5AC1BCC",
+					"properties": {
+						"m_bEnabled": { "type": "bool", "value": true },
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafee3ae0fce1f52"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee3ae0fce1f52",
+				{
+					"parent": "cafe7637ac6f143f",
+					"name": "EventToken_Evergreen_AgendaStatus_CourierActive",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Give1Focus"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe816b06aef04d",
+				{
+					"parent": "cafe7093782513ce",
+					"name": "Body Seen?",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_bValue": { "type": "bool", "value": false }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7093782513ce",
+				{
+					"parent": "cafebc01c5291b4c",
+					"name": "States",
+					"factory": "[modules:/zentity.class].pc_entitytype",
+					"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef399fa52ee33",
+				{
+					"parent": "cafebc01c5291b4c",
+					"name": "On Pacification",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 3000
+						}
+					},
+					"events": { "Out": { "Poll": ["cafe10e28c7196cb"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe10e28c7196cb",
+				{
+					"parent": "cafef399fa52ee33",
+					"name": "ValueBool_Poll",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe816b06aef04d"
+						}
+					},
+					"events": {
+						"PollFalse": {
+							"TransmitEvent": ["cafe7637ac6f143f"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafefe650c339013",
+				{
+					"parent": "cafebc01c5291b4c",
+					"name": "On Murdered",
+					"factory": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic.template?/timersimple.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Delay time (ms)": {
+							"type": "int32",
+							"value": 3000
+						}
+					},
+					"events": { "Out": { "Poll": ["cafea3f6cd137803"] } }
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea3f6cd137803",
+				{
+					"parent": "cafefe650c339013",
+					"name": "ValueBool_Poll",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe171584a48185"
+						}
+					},
+					"events": {
+						"PollFalse": { "Poll": ["cafe1f1846a41d9a"] }
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1f1846a41d9a",
+				{
+					"parent": "cafea3f6cd137803",
+					"name": "ValueBool_Poll",
+					"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe816b06aef04d"
+						}
+					},
+					"events": {
+						"PollFalse": {
+							"TransmitEvent": ["cafe7afa522567a8"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe7afa522567a8",
+				{
+					"parent": "cafebc01c5291b4c",
+					"name": "Event Transmitter",
+					"factory": "0037A7E362011A78",
+					"blueprint": "003D29EFE5AC1BCC",
+					"properties": {
+						"m_bEnabled": { "type": "bool", "value": true },
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe134b4b41b3cb"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe134b4b41b3cb",
+				{
+					"parent": "cafe7afa522567a8",
+					"name": "EventToken_Evergreen_AgendaStatus_CourierActive",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "Give1FocusMurder"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

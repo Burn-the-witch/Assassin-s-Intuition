@@ -1,0 +1,410 @@
+{
+	"tempHash": "001CE5F73DA9C29C",
+	"tbluHash": "00317FC2473AE325",
+	"rootEntity": "8631f0740de89c29",
+	"entities": {
+		"62056607c3b94ad7": {
+			"parent": "8631f0740de89c29",
+			"name": "HideAndDetach",
+			"factory": "[modules:/zsignalpipeentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalpipeentity_void.class].pc_entityblueprint",
+			"events": {
+				"Out": {
+					"DetachAndHide": ["d51ce83189eae919"],
+					"TriggerEvent02_TurnOff": ["c7f7ab0424ee3db3"]
+				}
+			}
+		},
+		"37c1dd3ddfe701c2": {
+			"parent": "8631f0740de89c29",
+			"name": "ShowAndAttach",
+			"factory": "[modules:/zsignalpipeentity_void.class].pc_entitytype",
+			"blueprint": "[modules:/zsignalpipeentity_void.class].pc_entityblueprint",
+			"events": {
+				"Out": {
+					"AttachRightHand": ["d51ce83189eae919"],
+					"TriggerEvent01_TurnOn": ["c7f7ab0424ee3db3"],
+					"Send": ["cafe5b391d5503ac"]
+				}
+			}
+		},
+		"866155e7a5ffedfe": {
+			"parent": "8631f0740de89c29",
+			"name": "ActHelper_Generic_Dialog",
+			"factory": "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_generic_dialog.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/acthelpers.template?/acthelper_generic_dialog.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_bValueGenericDialog": {
+					"type": "bool",
+					"value": false
+				},
+				"m_rActBehavior": {
+					"type": "SEntityTemplateReference",
+					"value": "8842a43aeb9d2f93",
+					"postInit": true
+				}
+			},
+			"outputCopying": {
+				"ActTimeout": { "OnActTimeout": ["8631f0740de89c29"] }
+			}
+		},
+		"49eb3ea9a381b28f": {
+			"parent": "8631f0740de89c29",
+			"name": "Childnetwork01",
+			"factory": "[assembly:/templates/markup/actorambience.template?/childnetworkact.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/markup/actorambience.template?/childnetworkact.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_RuntimeNetworkResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/actors/acts/generic/stand/mr_stand_phone_text.aln].pc_rtn",
+						"flag": "9F"
+					}
+				},
+				"m_bEnableAmbientLookat": {
+					"type": "bool",
+					"value": false
+				},
+				"m_ePerceptionSensitivity": {
+					"type": "EActorPerceptionSensitivity",
+					"value": "APS_AMBIENT"
+				},
+				"m_aActEvents": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [],
+					"postInit": true
+				}
+			},
+			"events": {
+				"ActEvent4001": { "In": ["37c1dd3ddfe701c2"] },
+				"OnDone": { "In": ["62056607c3b94ad7"] },
+				"ActEvent4002": { "In": ["62056607c3b94ad7"] },
+				"OnIActorChanged": { "SetIActor": ["d51ce83189eae919"] },
+				"Speak": { "Start_Speaking": ["866155e7a5ffedfe"] }
+			},
+			"outputCopying": {
+				"ActEvent4001": { "OnPhoneShown": ["8631f0740de89c29"] }
+			}
+		},
+		"8842a43aeb9d2f93": {
+			"parent": "8631f0740de89c29",
+			"name": "ActBehavior",
+			"factory": "[assembly:/_pro/design/actor/spsystem.template?/actbehavior.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/actor/spsystem.template?/actbehavior.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": -2.0233969688415527,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_rAct": {
+					"type": "SEntityTemplateReference",
+					"value": "49eb3ea9a381b28f"
+				},
+				"m_bAlignPosition": { "type": "bool", "value": false },
+				"m_AlignRotation": {
+					"type": "ZActBehaviorEntity.ERotationAlignment",
+					"value": "RA_LOOSE"
+				},
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_fActTimeout": { "type": "float32", "value": 5.0 },
+				"m_MovementType": {
+					"type": "ZActBehaviorEntity.EMovementType",
+					"value": "MT_WALK"
+				},
+				"m_aApproachPath": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_eState": {
+					"type": "ZActBehaviorEntity.EState",
+					"value": "IDLE"
+				},
+				"m_bIgnoreEndCollision": { "type": "bool", "value": true },
+				"m_Color": { "type": "SColorRGB", "value": "#e600c1" },
+				"m_EnteringConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_StartingConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": null,
+					"postInit": true
+				}
+			},
+			"events": { "OnInterrupted": { "In": ["62056607c3b94ad7"] } },
+			"outputCopying": {
+				"OnStart": { "OnStart": ["8631f0740de89c29"] },
+				"OnReached": { "OnReached": ["8631f0740de89c29"] },
+				"OnAbort": { "OnAbort": ["8631f0740de89c29"] }
+			}
+		},
+		"d51ce83189eae919": {
+			"parent": "8631f0740de89c29",
+			"name": "ActorAccessoryItemAction",
+			"factory": "[modules:/zactoraccessoryitemaction.class].pc_entitytype",
+			"blueprint": "[modules:/zactoraccessoryitemaction.class].pc_entityblueprint",
+			"properties": {
+				"m_pActor": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rAccessoryItem": {
+					"type": "SEntityTemplateReference",
+					"value": "c7f7ab0424ee3db3",
+					"postInit": true
+				}
+			}
+		},
+		"c7f7ab0424ee3db3": {
+			"parent": "8631f0740de89c29",
+			"name": "AccessoryItem_Smartphone_A",
+			"factory": "[assembly:/_pro/items/templates/accessories/smartphones_a.template?/accessoryitem_smartphone_a.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/items/templates/accessories/smartphones_a.template?/accessoryitem_smartphone_a.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bVisibleOnStartup": { "type": "bool", "value": false },
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "8631f0740de89c29",
+					"postInit": true
+				}
+			},
+			"subsets": { "Replicable": ["8631f0740de89c29"] }
+		},
+		"8631f0740de89c29": {
+			"parent": null,
+			"name": "Act_MR_Stand_Phone_Text",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": -2.0233969688415527,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_AlignRotation": {
+					"type": "ZActBehaviorEntity.ERotationAlignment",
+					"value": "RA_LOOSE"
+				},
+				"m_ePerceptionSensitivity": {
+					"type": "EActorPerceptionSensitivity",
+					"value": "APS_AMBIENT"
+				}
+			},
+			"inputCopying": {
+				"Start": {
+					"Start": ["8842a43aeb9d2f93"],
+					"Send": ["cafe5b391d5503ac"]
+				}
+			},
+			"propertyAliases": {
+				"m_AlignRotation": [
+					{
+						"originalProperty": "m_AlignRotation",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_Color": [
+					{
+						"originalProperty": "m_Color",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_EnteringConditions": [
+					{
+						"originalProperty": "m_EnteringConditions",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_MovementType": [
+					{
+						"originalProperty": "m_MovementType",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_StartingConditions": [
+					{
+						"originalProperty": "m_StartingConditions",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_aApproachPath": [
+					{
+						"originalProperty": "m_aApproachPath",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_bAlignPosition": [
+					{
+						"originalProperty": "m_bAlignPosition",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_bAllowReactToSillyHitman": [
+					{
+						"originalProperty": "m_bAllowReactToSillyHitman",
+						"originalEntity": "49eb3ea9a381b28f"
+					}
+				],
+				"m_bIgnoreEndCollision": [
+					{
+						"originalProperty": "m_bIgnoreEndCollision",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_bValueGenericDialog": [
+					{
+						"originalProperty": "m_bValueGenericDialog",
+						"originalEntity": "866155e7a5ffedfe"
+					}
+				],
+				"m_eDebugState": [
+					{
+						"originalProperty": "m_eDebugState",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_ePerceptionSensitivity": [
+					{
+						"originalProperty": "m_ePerceptionSensitivity",
+						"originalEntity": "49eb3ea9a381b28f"
+					}
+				],
+				"m_eState": [
+					{
+						"originalProperty": "m_eState",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_eidParent": [
+					{
+						"originalProperty": "m_eidParent",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_fActTimeout": [
+					{
+						"originalProperty": "m_fActTimeout",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_mTransform": [
+					{
+						"originalProperty": "m_mTransform",
+						"originalEntity": "8842a43aeb9d2f93"
+					}
+				],
+				"m_pActor": [
+					{
+						"originalProperty": "m_pActor",
+						"originalEntity": "8842a43aeb9d2f93"
+					},
+					{
+						"originalProperty": "m_pActor",
+						"originalEntity": "d51ce83189eae919"
+					},
+					{
+						"originalProperty": "m_rActor",
+						"originalEntity": "866155e7a5ffedfe"
+					}
+				]
+			},
+			"exposedInterfaces": {
+				"IWaypoint": "8842a43aeb9d2f93",
+				"ZSpatialEntity": "8842a43aeb9d2f93",
+				"IBoolCondition": "8842a43aeb9d2f93",
+				"ZActBehaviorEntity": "8842a43aeb9d2f93",
+				"ZBehaviorEntityBase": "8842a43aeb9d2f93"
+			}
+		},
+		"cafe5b391d5503ac": {
+			"parent": "cafef4060713f778",
+			"name": "Audio event",
+			"factory": "[modules:/zaudioevententity.class].pc_entitytype",
+			"blueprint": "[modules:/zaudioevententity.class].pc_entityblueprint",
+			"properties": {
+				"m_pEmitter": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeba4d0b9660ad"
+				},
+				"m_pMainEvent": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/sound/wwise/exportedwwisedata/events/animation/acts/fol_phonehandling/play_fol_smartphone_vibrate.wwiseevent].pc_wwisebank",
+						"flag": "5F"
+					}
+				}
+			}
+		},
+		"cafeba4d0b9660ad": {
+			"parent": "cafef4060713f778",
+			"name": "Audio emitter",
+			"factory": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/sound/wwise/soundentities.template?/3daudioemitter.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": 0, "y": 0, "z": 0 },
+						"position": { "x": 0, "y": 0, "z": 0.6 }
+					}
+				},
+				"m_bUseRoomOcclusion": { "type": "bool", "value": false },
+				"m_bUseRaycastObstruction": {
+					"type": "bool",
+					"value": false
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "c7f7ab0424ee3db3",
+					"postInit": true
+				}
+			},
+			"subsets": { "AudioEmitters": ["8631f0740de89c29"] }
+		},
+		"cafef4060713f778": {
+			"parent": "8631f0740de89c29",
+			"name": "Vibrate",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint"
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [
+		{
+			"resource": "[assembly:/_pro/environment/textures/props/accessories/smartphone_a.texture?/emissive_b.tex](ascolormap).pc_tex",
+			"flag": "5F"
+		}
+	],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

@@ -1,0 +1,1053 @@
+{
+	"tempHash": "0092AAB2AF8AC127",
+	"tbluHash": "00FD344E2C85A39D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"AddProperty": [
+						"m_vGlowTraversalFadeNearFar",
+						{
+							"type": "SVector2",
+							"value": { "x": 12.5, "y": 17.5 }
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowContractFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowGunsFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowLTMemoryFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowSetPieceFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowStashedGunsFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowContractTargetSpecialFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowContractSuspectFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowEnemiesFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_vGlowCivilianFadeNearFar",
+						"value": { "x": 12.5, "y": 17.5 }
+					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"AddProperty": [
+						"m_vGlowEnforcerFadeNearFar",
+						{
+							"type": "SVector2",
+							"value": { "x": 12.5, "y": 17.5 }
+						}
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65871c53192d1053",
+				{ "RemovePropertyAlias": "m_vGlowCivilianFadeNearFar" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65871c53192d1053",
+				{ "RemovePropertyAlias": "m_vGlowContractFadeNearFar" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65871c53192d1053",
+				{ "RemovePropertyAlias": "m_vGlowEnemiesFadeNearFar" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65871c53192d1053",
+				{ "RemovePropertyAlias": "m_vGlowGunsFadeNearFar" }
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"65871c53192d1053",
+				{ "RemovePropertyAlias": "m_vGlowSetPieceFadeNearFar" }
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe69ea5fdbe799",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Special Target Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowContractTargetSpecialFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebcac8cd8f2ea",
+				{
+					"parent": "cafe69ea5fdbe799",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe69ea5fdbe799",
+									"value": {
+										"type": "SVector2",
+										"value": {
+											"x": 9999.0,
+											"y": 9999.0
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9084ca0e6b69",
+				{
+					"parent": "cafe69ea5fdbe799",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe69ea5fdbe799",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe123e4c444d2e",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Target Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowContractFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe73062372035d",
+				{
+					"parent": "cafe123e4c444d2e",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe123e4c444d2e",
+									"value": {
+										"type": "SVector2",
+										"value": {
+											"x": 9999.0,
+											"y": 9999.0
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe1d9ce64dd211",
+				{
+					"parent": "cafe123e4c444d2e",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe123e4c444d2e",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec5d3d49b8303",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Enforcer Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowEnforcerFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb8d3f5e96f84",
+				{
+					"parent": "cafec5d3d49b8303",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafec5d3d49b8303",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 25.0, "y": 35.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe526b4a37774a",
+				{
+					"parent": "cafec5d3d49b8303",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafec5d3d49b8303",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea07c565b8418",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Guard Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowEnemiesFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeef301d9d5b19",
+				{
+					"parent": "cafea07c565b8418",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafea07c565b8418",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 25.0, "y": 35.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe403747b7ae90",
+				{
+					"parent": "cafea07c565b8418",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafea07c565b8418",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0135d2c6ca66",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "HeroSensorConditionEntity",
+					"factory": "[modules:/zherosensorconditionentity.class].pc_entitytype",
+					"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
+					"properties": {
+						"m_eMonitoredEvent": {
+							"type": "EAISharedEventType",
+							"value": "AISET_ShootingBallet"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeedb037924a7e",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "Reciever Enhance",
+					"factory": "004431ED90E784E2",
+					"blueprint": "0033EB6A108DCA99",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe3b037a6333b6"
+						},
+						"m_bEnabled": { "type": "bool", "value": true }
+					},
+					"events": {
+						"EventReceived": {
+							"In": [
+								"cafe73062372035d",
+								"cafebcac8cd8f2ea",
+								"cafeef301d9d5b19",
+								"cafeb8d3f5e96f84",
+								"cafe9103e9ef6754",
+								"cafef44d45fd353b",
+								"cafef1af81c584dd",
+								"cafe464992b29836",
+								"cafe0a2fb1a056fa",
+								"cafe02f9517684f7",
+								"cafe47361fa70a11"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe3b037a6333b6",
+				{
+					"parent": "cafeedb037924a7e",
+					"name": "EventToken_Evergreen_AgendaStatus_CourierActive",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "EnhanceInstinct"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee68bec089506",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "Reciever Downgrade",
+					"factory": "004431ED90E784E2",
+					"blueprint": "0033EB6A108DCA99",
+					"properties": {
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafed718f09786da"
+						},
+						"m_bEnabled": { "type": "bool", "value": true }
+					},
+					"events": {
+						"EventReceived": {
+							"In": [
+								"cafe526b4a37774a",
+								"cafe403747b7ae90",
+								"cafe9084ca0e6b69",
+								"cafe1d9ce64dd211",
+								"cafe8790c76241e7",
+								"cafe0438e91a7051",
+								"cafe156a88cb92fa",
+								"cafe4f8508cc7726",
+								"cafe8d97a66a93da",
+								"cafeb9640159d64e",
+								"cafec1e8941e0b1c"
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafed718f09786da",
+				{
+					"parent": "cafee68bec089506",
+					"name": "EventToken_Evergreen_AgendaStatus_CourierActive",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "ResetInstinct"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe08e4fe04914a",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Guns Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowGunsFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe9103e9ef6754",
+				{
+					"parent": "cafe08e4fe04914a",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe08e4fe04914a",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 30.0, "y": 40.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8790c76241e7",
+				{
+					"parent": "cafe08e4fe04914a",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe08e4fe04914a",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafebca758416c85",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Civilian Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowCivilianFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef44d45fd353b",
+				{
+					"parent": "cafebca758416c85",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafebca758416c85",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 25.0, "y": 35.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0438e91a7051",
+				{
+					"parent": "cafebca758416c85",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafebca758416c85",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe32f1fbd29e1d",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Witness Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowLTMemoryFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafef1af81c584dd",
+				{
+					"parent": "cafe32f1fbd29e1d",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe32f1fbd29e1d",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 25.0, "y": 35.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe156a88cb92fa",
+				{
+					"parent": "cafe32f1fbd29e1d",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe32f1fbd29e1d",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafefa0867051a4e",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Setpiece Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowSetPieceFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe464992b29836",
+				{
+					"parent": "cafefa0867051a4e",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafefa0867051a4e",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 40.0, "y": 100.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe4f8508cc7726",
+				{
+					"parent": "cafefa0867051a4e",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafefa0867051a4e",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe840f6776449c",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Stash Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowStashedGunsFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0a2fb1a056fa",
+				{
+					"parent": "cafe840f6776449c",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe840f6776449c",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 30.0, "y": 40.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe8d97a66a93da",
+				{
+					"parent": "cafe840f6776449c",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafe840f6776449c",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea67500c8c1ee",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Suspect Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowContractSuspectFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe02f9517684f7",
+				{
+					"parent": "cafea67500c8c1ee",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafea67500c8c1ee",
+									"value": {
+										"type": "SVector2",
+										"value": {
+											"x": 9999.0,
+											"y": 9999.0
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb9640159d64e",
+				{
+					"parent": "cafea67500c8c1ee",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafea67500c8c1ee",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafee95d68e5b051",
+				{
+					"parent": "f55806ff6135965f",
+					"name": "PropertyValue Traversal Glow Range",
+					"factory": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entitytype",
+					"blueprint": "[modules:/zhm5propertyvalueentity_svector2.class].pc_entityblueprint",
+					"properties": {
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_vGlowTraversalFadeNearFar"
+						},
+						"m_Entity": {
+							"type": "SEntityTemplateReference",
+							"value": "f55806ff6135965f"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe47361fa70a11",
+				{
+					"parent": "cafee95d68e5b051",
+					"name": "Enhanced",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafee95d68e5b051",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 25.0, "y": 35.0 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafec1e8941e0b1c",
+				{
+					"parent": "cafee95d68e5b051",
+					"name": "Base",
+					"factory": "[modules:/zsignalgateentity_void.class].pc_entitytype",
+					"blueprint": "[modules:/zsignalgateentity_void.class].pc_entityblueprint",
+					"events": {
+						"Out": {
+							"Set": [
+								{
+									"ref": "cafee95d68e5b051",
+									"value": {
+										"type": "SVector2",
+										"value": { "x": 12.5, "y": 17.5 }
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

@@ -1,0 +1,76 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"0471017dfdb343af",
+				{
+					"AddProperty": [
+						"m_bIsVisible",
+						{ "type": "bool", "value": true }
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe0f6ae2dcfe6c",
+				{
+					"parent": "0471017dfdb343af",
+					"name": "GameTensionEmitter",
+					"factory": "[assembly:/templates/gameplay/ai2/gametensionemitter.template?/gametensionemitter.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/templates/gameplay/ai2/gametensionemitter.template?/gametensionemitter.entitytemplate].pc_entityblueprint",
+					"events": {
+						"Instinct_Active": {
+							"SetFalse": ["cafea04b607670c3"]
+						},
+						"Instinct_Deactive": {
+							"SetTrue": ["cafea04b607670c3"]
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafea04b607670c3",
+				{
+					"parent": "cafe0f6ae2dcfe6c",
+					"name": "DONTUSE_ValueBool_Set",
+					"factory": "[modules:/zvaluebool_set.class].pc_entitytype",
+					"blueprint": "[modules:/zvaluebool_set.class].pc_entityblueprint",
+					"properties": {
+						"m_rValueEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "cafeb7facead8953",
+							"postInit": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafeb7facead8953",
+				{
+					"parent": "cafea04b607670c3",
+					"name": "DONTUSE_ValueBool_EntityProperty",
+					"factory": "[modules:/zvaluebool_entityproperty.class].pc_entitytype",
+					"blueprint": "[modules:/zvaluebool_entityproperty.class].pc_entityblueprint",
+					"properties": {
+						"m_rEntity": {
+							"type": "SEntityTemplateReference",
+							"value": "0471017dfdb343af"
+						},
+						"m_sPropertyName": {
+							"type": "ZString",
+							"value": "m_bIsVisible"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

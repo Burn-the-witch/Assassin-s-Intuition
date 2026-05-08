@@ -1,0 +1,25 @@
+{
+	"$schema": "https://tonytools.win/schemas/dlge.schema.json",
+	"hash": "[assembly:/localization/hitman6/conversations/evergreen/npcs/ev089_hmreply.sweetdialog_instinctplus].pc_dialogevent",
+	"DITL": "[assembly:/localization/hitman6.sweet].pc_dialogsoundtemplatelist",
+	"CLNG": "[assembly:/localization/hitman6.sweet].pc_cascadinglanguagedependencies",
+	"rootContainer":{
+				"type": "WavFile",
+				"wavName": "ev089_hmreply_47_053",
+				"weight": 0.013422787989544152,
+				"soundtag": "In-world_Maincharacter",
+				"defaultWav": "[assembly:/sound/wwise/originals/voices/english(us)/evergreen/npcs/ev089_hmreply_47_053.wav].pc_wes",
+				"defaultFfx": "[assembly:/_pro/facefx/exported_animation/english(us)/evergreen/npcs/ev089_hmreply_47_053.animset].pc_animset",
+				"languages": {
+					"en": "//(0,30)\\\\Mhm.",
+					"fr": "//(0,30)\\\\Mhm.",
+					"it": "//(0,30)\\\\Grazie.",
+					"de": "//(0,30)\\\\Mhm.",
+					"es": "//(0,30)\\\\Gracias.",
+					"ru": "//(0,30)\\\\Спасибо.",
+					"cn": "//(0,30)\\\\谢谢。",
+					"tc": "//(0,30)\\\\嗯嗯。",
+					"jp": "//(0,30)\\\\うむ。"
+				}
+			} 
+}

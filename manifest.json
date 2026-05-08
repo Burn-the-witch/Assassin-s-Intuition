@@ -1,9 +1,89 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"id": "maxmods.InstinctOverhaul",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"name": "Assassin's Intuition",
+	"description": "Overhauls Instinct into a fully featured ability system inspired by 007 First Light.",
+	"authors": [
+		"Max"
+	],
+	"localisation": {
+		"english": {
+			"instinct_concentrate": "Focus",
+			"instinct_focus_ability_low": "Instinct Action (-2)",
+			"instinct_focus_ability_mid": "Instinct Action (-3)",
+			"instinct_focus_ability_high": "Instinct Action (-4)",
+			"instinct_focus_ability_plural": "Instinct Actions",
+			"instinct_slow_mo": "Bullet Dancer",
+			"instinct_lure": "Lure",
+			"instinct_distract": "Disruption",
+			"instinct_health": "Recover",
+			"instinct_adrenaline": "Adrenaline"
+		}
+	},
+	"localisedLines": {
+		"00470B0335C722F9": "instinct_focus_ability_plural",
+		"0085378F656E0ADC": "instinct_focus_ability_low",
+		"00805B3C0E8BFDAC": "instinct_focus_ability_mid",
+		"0009723624EDA40F": "instinct_focus_ability_high"
+		},
+	"dependencies": [
+		{
+			"runtimeID": "00140C5C14DFD86D",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "00380C89BFBF6AED",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "006F34665266B155",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "00F791A73307AB48",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "0019C2D16CA1341A",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "00848488E5D10EBC",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Bullet Dancer Dependency"
+		},
+		{
+			"runtimeID": "0006BAA7B9DA5696",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Distraction Dependency"
+		},
+		{
+			"runtimeID": "00207CF376AEDFAF",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "NPC Attatcher"
+		},
+{
+			"runtimeID": "00CB203AA5BEF187",
+			"toChunk": 0,
+			"portFromChunk1": true,
+			"comment": "Blind Dependency"
+		}
+	],
+	"frameworkVersion": "2.0.0",
+	"contentFolders": [
+		"content"
+	]
 }

@@ -1,0 +1,102 @@
+{
+	"tempHash": "0093B7139387B988",
+	"tbluHash": "004D99E9BEC3EA51",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"7983f2ed272459d2",
+				{
+					"AddOutputCopyConnection": [
+						"Closed",
+						"TransmitEvent",
+						"cafe80f8bcb28776"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"893aa5120025fef6",
+				{
+					"AddOutputCopyConnection": [
+						"Closed",
+						"TransmitEvent",
+						"cafe80f8bcb28776"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"1cb22023a183ec3e",
+				{
+					"AddOutputCopyConnection": [
+						"Closed",
+						"TransmitEvent",
+						"cafe80f8bcb28776"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"6bb7f5bedf363204",
+				{
+					"AddEventConnection": [
+						"InventoryViewClosed",
+						"TransmitEvent",
+						"cafe80f8bcb28776"
+					]
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"6bb7f5bedf363204",
+				{
+					"AddEventConnection": [
+						"ActionSelectionMenuClosed",
+						"In",
+						"cafe80f8bcb28776"
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe80f8bcb28776",
+				{
+					"parent": "c4a94b73f058796b",
+					"name": "Event Transmitter",
+					"factory": "0037A7E362011A78",
+					"blueprint": "003D29EFE5AC1BCC",
+					"properties": {
+						"m_bEnabled": { "type": "bool", "value": true },
+						"m_rChannelToken": {
+							"type": "SEntityTemplateReference",
+							"value": "cafe203ed55ae138"
+						}
+					}
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe203ed55ae138",
+				{
+					"parent": "cafe80f8bcb28776",
+					"name": "EventToken_Evergreen_AgendaStatus_CourierActive",
+					"factory": "[modules:/ztokenidentity.class].pc_entitytype",
+					"blueprint": "[modules:/ztokenidentity.class].pc_entityblueprint",
+					"properties": {
+						"m_sName": {
+							"type": "ZString",
+							"value": "ResetFocusIndicator"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
