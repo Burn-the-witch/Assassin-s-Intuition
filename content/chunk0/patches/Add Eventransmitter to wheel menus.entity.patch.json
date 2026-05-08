@@ -6,11 +6,7 @@
 			"SubEntityOperation": [
 				"7983f2ed272459d2",
 				{
-					"AddOutputCopyConnection": [
-						"Closed",
-						"TransmitEvent",
-						"cafe80f8bcb28776"
-					]
+					"AddOutputCopyConnection": ["Closed", "TransmitEvent", "cafe80f8bcb28776"]
 				}
 			]
 		},
@@ -18,11 +14,7 @@
 			"SubEntityOperation": [
 				"893aa5120025fef6",
 				{
-					"AddOutputCopyConnection": [
-						"Closed",
-						"TransmitEvent",
-						"cafe80f8bcb28776"
-					]
+					"AddOutputCopyConnection": ["Closed", "TransmitEvent", "cafe80f8bcb28776"]
 				}
 			]
 		},
@@ -30,11 +22,7 @@
 			"SubEntityOperation": [
 				"1cb22023a183ec3e",
 				{
-					"AddOutputCopyConnection": [
-						"Closed",
-						"TransmitEvent",
-						"cafe80f8bcb28776"
-					]
+					"AddOutputCopyConnection": ["Closed", "TransmitEvent", "cafe80f8bcb28776"]
 				}
 			]
 		},
@@ -42,11 +30,7 @@
 			"SubEntityOperation": [
 				"6bb7f5bedf363204",
 				{
-					"AddEventConnection": [
-						"InventoryViewClosed",
-						"TransmitEvent",
-						"cafe80f8bcb28776"
-					]
+					"AddEventConnection": ["InventoryViewClosed", "TransmitEvent", "cafe80f8bcb28776"]
 				}
 			]
 		},
@@ -54,11 +38,7 @@
 			"SubEntityOperation": [
 				"6bb7f5bedf363204",
 				{
-					"AddEventConnection": [
-						"ActionSelectionMenuClosed",
-						"In",
-						"cafe80f8bcb28776"
-					]
+					"AddEventConnection": ["ActionSelectionMenuClosed", "In", "cafe80f8bcb28776"]
 				}
 			]
 		},

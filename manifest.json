@@ -3,9 +3,7 @@
 	"id": "maxmods.InstinctOverhaul",
 	"name": "Assassin's Intuition",
 	"description": "Overhauls Instinct into a fully featured ability system inspired by 007 First Light.",
-	"authors": [
-		"Max"
-	],
+	"authors": ["Max"],
 	"localisation": {
 		"english": {
 			"instinct_concentrate": "Focus",
@@ -25,7 +23,7 @@
 		"0085378F656E0ADC": "instinct_focus_ability_low",
 		"00805B3C0E8BFDAC": "instinct_focus_ability_mid",
 		"0009723624EDA40F": "instinct_focus_ability_high"
-		},
+	},
 	"dependencies": [
 		{
 			"runtimeID": "00140C5C14DFD86D",
@@ -75,15 +73,14 @@
 			"portFromChunk1": true,
 			"comment": "NPC Attatcher"
 		},
-{
+		{
 			"runtimeID": "00CB203AA5BEF187",
 			"toChunk": 0,
 			"portFromChunk1": true,
 			"comment": "Blind Dependency"
 		}
 	],
-	"frameworkVersion": "2.0.0",
-	"contentFolders": [
-		"content"
-	]
+	"frameworkVersion": "2.33.35",
+	"contentFolders": ["content"],
+	"updateCheck": "https://github.com/Burn-the-witch/Assassin-s-Intuition/releases/latest/download/updates.json"
 }

@@ -17,10 +17,7 @@
 			"SubEntityOperation": [
 				"8bd88e21764e174b",
 				{
-					"AddProperty": [
-						"m_bHideActors",
-						{ "type": "bool", "value": false }
-					]
+					"AddProperty": ["m_bHideActors", { "type": "bool", "value": false }]
 				}
 			]
 		},
@@ -28,10 +25,7 @@
 			"SubEntityOperation": [
 				"8bd88e21764e174b",
 				{
-					"AddProperty": [
-						"m_bHideActorsUseBox",
-						{ "type": "bool", "value": false }
-					]
+					"AddProperty": ["m_bHideActorsUseBox", { "type": "bool", "value": false }]
 				}
 			]
 		},
@@ -700,10 +694,7 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"TransmitEvent": [
-								"cafe81b6b1365831",
-								"cafe6cfda65a461e"
-							],
+							"TransmitEvent": ["cafe81b6b1365831", "cafe6cfda65a461e"],
 							"In": ["cafe409db94c7349"],
 							"Subtract": ["cafe689b4a7b66f3"],
 							"Send": ["cafecd94a7083aea"],
@@ -730,10 +721,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafec6fa3a8ceb43",
-								"cafebe7e4706abf0"
-							]
+							"value": ["cafec6fa3a8ceb43", "cafebe7e4706abf0"]
 						}
 					}
 				}
@@ -912,10 +900,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafebe7e4706abf0",
-								"cafec6fa3a8ceb43"
-							]
+							"value": ["cafebe7e4706abf0", "cafec6fa3a8ceb43"]
 						}
 					}
 				}
@@ -1371,18 +1356,12 @@
 								}
 							],
 							"TransmitEvent": ["cafeac53c737085d"],
-							"Start": [
-								"cafe084f1b843d79",
-								"cafedf254c6f2a10"
-							],
+							"Start": ["cafe084f1b843d79", "cafedf254c6f2a10"],
 							"InGameplay": ["cafe20b44e11b174"]
 						},
 						"OnFalse": {
 							"None": ["cafe20b44e11b174"],
-							"TransmitEvent": [
-								"cafeac53c737085d",
-								"cafefde3eb5e618d"
-							],
+							"TransmitEvent": ["cafeac53c737085d", "cafefde3eb5e618d"],
 							"SetValue": [
 								{
 									"ref": "cafe373051bb50d5",
@@ -1392,10 +1371,7 @@
 									}
 								}
 							],
-							"Stop": [
-								"cafe084f1b843d79",
-								"cafedf254c6f2a10"
-							]
+							"Stop": ["cafe084f1b843d79", "cafedf254c6f2a10"]
 						}
 					}
 				}
@@ -1642,14 +1618,8 @@
 					"events": {
 						"PollTrue": {
 							"Toggle": ["cafed3f58db559d4"],
-							"Reset": [
-								"cafedf254c6f2a10",
-								"cafe084f1b843d79"
-							],
-							"Stop": [
-								"cafedf254c6f2a10",
-								"cafe084f1b843d79"
-							],
+							"Reset": ["cafedf254c6f2a10", "cafe084f1b843d79"],
+							"Stop": ["cafedf254c6f2a10", "cafe084f1b843d79"],
 							"Send": ["cafed4ace536f4a3"],
 							"Start": ["cafe00cf67328681"]
 						},
@@ -1699,10 +1669,7 @@
 					},
 					"events": {
 						"Out": {
-							"Poll": [
-								"cafe34bc063159f6",
-								"cafe3d8760c52c03"
-							],
+							"Poll": ["cafe34bc063159f6", "cafe3d8760c52c03"],
 							"In": ["cafee14189da2290"],
 							"TransmitEvent": ["cafe58c7eb8e4afc"]
 						}
@@ -2719,10 +2686,7 @@
 					},
 					"events": {
 						"Out": {
-							"Disable": [
-								"cafed1e7d81e1e2f",
-								"cafe9f33fdf37da4"
-							]
+							"Disable": ["cafed1e7d81e1e2f", "cafe9f33fdf37da4"]
 						}
 					}
 				}
@@ -2776,10 +2740,7 @@
 					},
 					"events": {
 						"Out": {
-							"Send": [
-								"cafef02538f9cdba",
-								"cafedefa90f5bad5"
-							],
+							"Send": ["cafef02538f9cdba", "cafedefa90f5bad5"],
 							"Activate": ["cafe95ce13d51957"]
 						}
 					}
@@ -3434,10 +3395,7 @@
 					},
 					"events": {
 						"Out": {
-							"TransmitEvent": [
-								"cafe4f54b28e3f50",
-								"cafe6cfda65a461e"
-							],
+							"TransmitEvent": ["cafe4f54b28e3f50", "cafe6cfda65a461e"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"Send": ["cafe8f597d510839"]
 						}
@@ -3966,11 +3924,7 @@
 								"cafe39ab93d93702",
 								"cafe9beebd142c47"
 							],
-							"SetFalse": [
-								"cafec6fa3a8ceb43",
-								"cafe115da83fed8b",
-								"cafe526579f59b27"
-							],
+							"SetFalse": ["cafec6fa3a8ceb43", "cafe115da83fed8b", "cafe526579f59b27"],
 							"In": ["cafe2f3853699c2c"]
 						}
 					}
@@ -7189,10 +7143,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe526579f59b27",
-								"cafebe7e4706abf0"
-							]
+							"value": ["cafe526579f59b27", "cafebe7e4706abf0"]
 						}
 					}
 				}
