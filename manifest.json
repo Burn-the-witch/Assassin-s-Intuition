@@ -6,10 +6,35 @@
 	"authors": [
 		"Max"
 	],
+	"options": [
+		{
+			"name": "Casual",
+			"tooltip": "Targets are always visible in Instinct. Actions are utilities that should be used wisely.",
+			"group": "Balancing",
+			"type": "select",
+			"contentFolders": [
+		"content", "casual"
+	]
+		},
+		{
+			"name": "Professional",
+			"tooltip": "The Intended Experience. Limited Instinct. Actions are utilities that should be used wisely.",
+			"group": "Balancing",
+			"type": "select",
+			"contentFolders": [
+		"content", "pro"
+	]
+		}
+	],
+	"requirements": [
+		"Notex.SimpleKeyEventHelper"
+	],
 	"localisation": {
 		"english": {
 			"instinct_concentrate": "Focus",
 			"instinct_focus_ability_low": "Instinct Action (-2)",
+			"instinct_focus_ability_gen": "Instinct Action",
+			"instinct_quit": "Conclude Action",
 			"instinct_focus_ability_mid": "Instinct Action (-3)",
 			"instinct_focus_ability_high": "Instinct Action (-4)",
 			"instinct_focus_ability_plural": "Instinct Actions",
@@ -18,13 +43,28 @@
 			"instinct_distract": "Disruption",
 			"instinct_health": "Recover",
 			"instinct_adrenaline": "Adrenaline"
+		},
+		"french": {
+			"instinct_concentrate": "Focus",
+			"instinct_focus_ability_low": "Action d'instinct (-2)",
+			"instinct_focus_ability_mid": "Action d'instinct (-3)",
+			"instinct_focus_ability_high": "Action d'instinct (-4)",
+			"instinct_focus_ability_gen": "Action d'Instinct",
+            "instinct_quit": "Arrêter Action",
+			"instinct_focus_ability_plural": "Actions d'instinct",
+			  "instinct_slow_mo": "Danseur de balles",
+            "instinct_lure": "Leurre",
+            "instinct_distract": "Perturbation",
+            "instinct_health": "Récupération",
+			"instinct_adrenaline": "Adrénaline"
 		}
 	},
 	"localisedLines": {
 		"00470B0335C722F9": "instinct_focus_ability_plural",
 		"0085378F656E0ADC": "instinct_focus_ability_low",
 		"00805B3C0E8BFDAC": "instinct_focus_ability_mid",
-		"0009723624EDA40F": "instinct_focus_ability_high"
+		"0009723624EDA40F": "instinct_focus_ability_high",
+		"0022861C31A43666": "instinct_focus_ability_gen"
 		},
 	"dependencies": [
 		{
@@ -80,10 +120,13 @@
 			"toChunk": 0,
 			"portFromChunk1": true,
 			"comment": "Blind Dependency"
+		},
+		{
+			"portFromChunk1": true,
+			"runtimeID": "000370144A61C5A9",
+			"toChunk": 0,
+			"comment": "Antidote"
 		}
 	],
-	"frameworkVersion": "2.0.0",
-	"contentFolders": [
-		"content"
-	]
+	"frameworkVersion": "2.0.0"
 }

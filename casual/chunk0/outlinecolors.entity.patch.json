@@ -6,31 +6,6 @@
 			"SubEntityOperation": [
 				"f55806ff6135965f",
 				{
-					"AddProperty": [
-						"m_vGlowTraversalFadeNearFar",
-						{
-							"type": "SVector2",
-							"value": { "x": 12.5, "y": 17.5 }
-						}
-					]
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"f55806ff6135965f",
-				{
-					"SetPropertyValue": {
-						"property_name": "m_vGlowContractFadeNearFar",
-						"value": { "x": 12.5, "y": 17.5 }
-					}
-				}
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"f55806ff6135965f",
-				{
 					"SetPropertyValue": {
 						"property_name": "m_vGlowGunsFadeNearFar",
 						"value": { "x": 12.5, "y": 17.5 }
@@ -77,7 +52,7 @@
 				{
 					"SetPropertyValue": {
 						"property_name": "m_vGlowContractTargetSpecialFadeNearFar",
-						"value": { "x": 12.5, "y": 17.5 }
+						"value": { "x": 9999.0, "y": 9999.0 }
 					}
 				}
 			]
@@ -112,6 +87,20 @@
 						"property_name": "m_vGlowCivilianFadeNearFar",
 						"value": { "x": 12.5, "y": 17.5 }
 					}
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"f55806ff6135965f",
+				{
+					"AddProperty": [
+						"m_vGlowTraversalFadeNearFar",
+						{
+							"type": "SVector2",
+							"value": { "x": 12.5, "y": 17.5 }
+						}
+					]
 				}
 			]
 		},
@@ -222,7 +211,10 @@
 									"ref": "cafe69ea5fdbe799",
 									"value": {
 										"type": "SVector2",
-										"value": { "x": 12.5, "y": 17.5 }
+										"value": {
+											"x": 9999.0,
+											"y": 9999.0
+										}
 									}
 								}
 							]
@@ -294,7 +286,10 @@
 									"ref": "cafe123e4c444d2e",
 									"value": {
 										"type": "SVector2",
-										"value": { "x": 12.5, "y": 17.5 }
+										"value": {
+											"x": 9999.0,
+											"y": 9999.0
+										}
 									}
 								}
 							]
@@ -436,23 +431,6 @@
 									}
 								}
 							]
-						}
-					}
-				}
-			]
-		},
-		{
-			"AddEntity": [
-				"cafe0135d2c6ca66",
-				{
-					"parent": "f55806ff6135965f",
-					"name": "HeroSensorConditionEntity",
-					"factory": "[modules:/zherosensorconditionentity.class].pc_entitytype",
-					"blueprint": "[modules:/zherosensorconditionentity.class].pc_entityblueprint",
-					"properties": {
-						"m_eMonitoredEvent": {
-							"type": "EAISharedEventType",
-							"value": "AISET_ShootingBallet"
 						}
 					}
 				}
