@@ -17,10 +17,7 @@
 			"SubEntityOperation": [
 				"8bd88e21764e174b",
 				{
-					"AddProperty": [
-						"m_bHideActors",
-						{ "type": "bool", "value": false }
-					]
+					"AddProperty": ["m_bHideActors", { "type": "bool", "value": false }]
 				}
 			]
 		},
@@ -28,10 +25,7 @@
 			"SubEntityOperation": [
 				"8bd88e21764e174b",
 				{
-					"AddProperty": [
-						"m_bHideActorsUseBox",
-						{ "type": "bool", "value": false }
-					]
+					"AddProperty": ["m_bHideActorsUseBox", { "type": "bool", "value": false }]
 				}
 			]
 		},
@@ -708,16 +702,8 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"TransmitEvent": [
-								"cafe81b6b1365831",
-								"cafe6cfda65a461e"
-							],
-							"In": [
-								"cafe643c51e695ac",
-								"cafe3778a24b2b5e",
-								"cafe6d9dac6d4fdc",
-								"cafe409db94c7349"
-							],
+							"TransmitEvent": ["cafe81b6b1365831", "cafe6cfda65a461e"],
+							"In": ["cafe643c51e695ac", "cafe3778a24b2b5e", "cafe6d9dac6d4fdc", "cafe409db94c7349"],
 							"Subtract": ["cafe689b4a7b66f3"],
 							"Send": ["cafe8f597d510839"],
 							"Transfer": [],
@@ -744,11 +730,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafec6fa3a8ceb43",
-								"cafebe7e4706abf0",
-								"cafe058b71d5291a"
-							]
+							"value": ["cafec6fa3a8ceb43", "cafebe7e4706abf0", "cafe058b71d5291a"]
 						}
 					}
 				}
@@ -903,12 +885,7 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"In": [
-								"cafe643c51e695ac",
-								"cafe785607f995a8",
-								"cafe3778a24b2b5e",
-								"cafe6d9dac6d4fdc"
-							],
+							"In": ["cafe643c51e695ac", "cafe785607f995a8", "cafe3778a24b2b5e", "cafe6d9dac6d4fdc"],
 							"Subtract": ["cafe689b4a7b66f3"],
 							"SetFalse": ["cafebe7e4706abf0"]
 						},
@@ -932,11 +909,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafebe7e4706abf0",
-								"cafec6fa3a8ceb43",
-								"cafec551aa0dd880"
-							]
+							"value": ["cafebe7e4706abf0", "cafec6fa3a8ceb43", "cafec551aa0dd880"]
 						}
 					}
 				}
@@ -1393,19 +1366,13 @@
 							],
 							"SetTrue": ["cafea20188944322"],
 							"TransmitEvent": ["cafeac53c737085d"],
-							"Start": [
-								"cafe084f1b843d79",
-								"cafedf254c6f2a10"
-							],
+							"Start": ["cafe084f1b843d79", "cafedf254c6f2a10"],
 							"InGameplay": ["cafe20b44e11b174"]
 						},
 						"OnFalse": {
 							"None": ["cafe20b44e11b174"],
 							"SetFalse": ["cafea20188944322"],
-							"TransmitEvent": [
-								"cafeac53c737085d",
-								"cafefde3eb5e618d"
-							],
+							"TransmitEvent": ["cafeac53c737085d", "cafefde3eb5e618d"],
 							"SetValue": [
 								{
 									"ref": "cafe373051bb50d5",
@@ -1415,10 +1382,7 @@
 									}
 								}
 							],
-							"Stop": [
-								"cafe084f1b843d79",
-								"cafedf254c6f2a10"
-							]
+							"Stop": ["cafe084f1b843d79", "cafedf254c6f2a10"]
 						}
 					}
 				}
@@ -1665,14 +1629,8 @@
 					"events": {
 						"PollTrue": {
 							"Toggle": ["cafed3f58db559d4"],
-							"Reset": [
-								"cafedf254c6f2a10",
-								"cafe084f1b843d79"
-							],
-							"Stop": [
-								"cafedf254c6f2a10",
-								"cafe084f1b843d79"
-							],
+							"Reset": ["cafedf254c6f2a10", "cafe084f1b843d79"],
+							"Stop": ["cafedf254c6f2a10", "cafe084f1b843d79"],
 							"Send": ["cafed4ace536f4a3"],
 							"Start": ["cafe00cf67328681"]
 						},
@@ -1722,10 +1680,7 @@
 					},
 					"events": {
 						"Out": {
-							"Poll": [
-								"cafe34bc063159f6",
-								"cafe3d8760c52c03"
-							],
+							"Poll": ["cafe34bc063159f6", "cafe3d8760c52c03"],
 							"In": ["cafee14189da2290"],
 							"TransmitEvent": ["cafe58c7eb8e4afc"]
 						}
@@ -2187,11 +2142,7 @@
 						},
 						"Completed": {
 							"Execute": ["cafe71928ebd7551"],
-							"In": [
-								"cafe643c51e695ac",
-								"cafe3778a24b2b5e",
-								"cafe6d9dac6d4fdc"
-							],
+							"In": ["cafe643c51e695ac", "cafe3778a24b2b5e", "cafe6d9dac6d4fdc"],
 							"Subtract": ["cafe1feab611d4d1"],
 							"Start": ["cafe9c47501617f9"],
 							"Transfer": [],
@@ -2217,10 +2168,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe7454a0d2e545",
-								"cafe115da83fed8b"
-							]
+							"value": ["cafe7454a0d2e545", "cafe115da83fed8b"]
 						}
 					}
 				}
@@ -2679,12 +2627,7 @@
 					"events": {
 						"ItemUsed": {
 							"Poll": ["cafea76da5958ed1"],
-							"In": [
-								"cafe643c51e695ac",
-								"cafe3778a24b2b5e",
-								"cafe6d9dac6d4fdc",
-								"cafea3b8a78fa034"
-							],
+							"In": ["cafe643c51e695ac", "cafe3778a24b2b5e", "cafe6d9dac6d4fdc", "cafea3b8a78fa034"],
 							"Subtract": ["cafe12e7a6f71020"]
 						},
 						"AnimEvent_Generic00": {
@@ -2712,10 +2655,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe4d47852f4b69",
-								"cafe526579f59b27"
-							]
+							"value": ["cafe4d47852f4b69", "cafe526579f59b27"]
 						}
 					}
 				}
@@ -2758,10 +2698,7 @@
 					},
 					"events": {
 						"Out": {
-							"Disable": [
-								"cafed1e7d81e1e2f",
-								"cafe9f33fdf37da4"
-							]
+							"Disable": ["cafed1e7d81e1e2f", "cafe9f33fdf37da4"]
 						}
 					}
 				}
@@ -2815,10 +2752,7 @@
 					},
 					"events": {
 						"Out": {
-							"Send": [
-								"cafef02538f9cdba",
-								"cafedefa90f5bad5"
-							],
+							"Send": ["cafef02538f9cdba", "cafedefa90f5bad5"],
 							"Activate": ["cafe95ce13d51957"]
 						}
 					}
@@ -3473,10 +3407,7 @@
 					},
 					"events": {
 						"Out": {
-							"TransmitEvent": [
-								"cafe4f54b28e3f50",
-								"cafe6cfda65a461e"
-							],
+							"TransmitEvent": ["cafe4f54b28e3f50", "cafe6cfda65a461e"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"SetFalse": ["cafe4d4652ab1644"],
 							"Send": ["cafe8f597d510839"]
@@ -3755,11 +3686,7 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"In": [
-								"cafe3778a24b2b5e",
-								"cafe6d9dac6d4fdc",
-								"cafe643c51e695ac"
-							],
+							"In": ["cafe3778a24b2b5e", "cafe6d9dac6d4fdc", "cafe643c51e695ac"],
 							"Send": ["cafe38817c347fc5"],
 							"RefillHealth": ["cafe1b86510af8c8"],
 							"TransmitEvent": ["cafe4b53ec14b315"],
@@ -3787,10 +3714,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe515c27bc43da",
-								"cafe115da83fed8b"
-							]
+							"value": ["cafe515c27bc43da", "cafe115da83fed8b"]
 						}
 					}
 				}
@@ -4016,11 +3940,7 @@
 								"cafe9beebd142c47",
 								"cafe01b85f7f12b8"
 							],
-							"SetFalse": [
-								"cafec6fa3a8ceb43",
-								"cafe115da83fed8b",
-								"cafe526579f59b27"
-							],
+							"SetFalse": ["cafec6fa3a8ceb43", "cafe115da83fed8b", "cafe526579f59b27"],
 							"In": ["cafe2f3853699c2c"]
 						}
 					}
@@ -7046,10 +6966,7 @@
 								"cafe2809523f3384"
 							],
 							"InGameplay": ["cafe20b44e11b174"],
-							"SetTrue": [
-								"cafe125dad6ee289",
-								"cafe34478968b4b4"
-							],
+							"SetTrue": ["cafe125dad6ee289", "cafe34478968b4b4"],
 							"Send": ["cafeb4c7edbe60e6"],
 							"TransmitEvent": ["cafe90e1c203eb3c"],
 							"Subtract": ["cafe12e7a6f71020"],
@@ -7076,11 +6993,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe526579f59b27",
-								"cafe18ab06b526a9",
-								"cafebe7e4706abf0"
-							]
+							"value": ["cafe526579f59b27", "cafe18ab06b526a9", "cafebe7e4706abf0"]
 						}
 					}
 				}
@@ -13906,10 +13819,7 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"TransmitEvent": [
-								"cafe4f54b28e3f50",
-								"cafe6cfda65a461e"
-							],
+							"TransmitEvent": ["cafe4f54b28e3f50", "cafe6cfda65a461e"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"SetFalse": ["cafe4d4652ab1644"],
 							"Abort": ["cafe409db94c7349"],
@@ -13935,10 +13845,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe4d4652ab1644",
-								"cafedaed67126699"
-							]
+							"value": ["cafe4d4652ab1644", "cafedaed67126699"]
 						}
 					}
 				}
@@ -14091,10 +13998,7 @@
 					},
 					"events": {
 						"Out": {
-							"TransmitEvent": [
-								"cafe05296f0d3e84",
-								"cafe460a7ce4463a"
-							],
+							"TransmitEvent": ["cafe05296f0d3e84", "cafe460a7ce4463a"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"Send": ["cafe47f005a9b553"]
 						}
@@ -14525,10 +14429,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafe125dad6ee289",
-								"cafedaed67126699"
-							]
+							"value": ["cafe125dad6ee289", "cafedaed67126699"]
 						}
 					}
 				}
@@ -14681,10 +14582,7 @@
 					},
 					"events": {
 						"Out": {
-							"TransmitEvent": [
-								"cafe41613844acf4",
-								"cafeabdfc5aa0fa8"
-							],
+							"TransmitEvent": ["cafe41613844acf4", "cafeabdfc5aa0fa8"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"Send": ["cafe1160073a6fd1"]
 						}
@@ -14898,17 +14796,9 @@
 							"StartDelay": []
 						},
 						"Completed": {
-							"SetFalse": [
-								"cafea20188944322",
-								"cafed3f58db559d4"
-							],
+							"SetFalse": ["cafea20188944322", "cafed3f58db559d4"],
 							"SetTrue": ["cafebe7e4706abf0"],
-							"Abort": [
-								"cafee5ee0c89deec",
-								"cafe00cf67328681",
-								"cafedf254c6f2a10",
-								"cafe084f1b843d79"
-							],
+							"Abort": ["cafee5ee0c89deec", "cafe00cf67328681", "cafedf254c6f2a10", "cafe084f1b843d79"],
 							"Send": ["cafed4ace536f4a3"]
 						},
 						"Started": { "SetTrue": [], "Trigger": [] }
@@ -14931,10 +14821,7 @@
 						},
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": [
-								"cafea20188944322",
-								"cafedaed67126699"
-							]
+							"value": ["cafea20188944322", "cafedaed67126699"]
 						}
 					}
 				}
@@ -15087,10 +14974,7 @@
 					},
 					"events": {
 						"Out": {
-							"TransmitEvent": [
-								"cafe460e4538df79",
-								"cafeba05b64d0f2b"
-							],
+							"TransmitEvent": ["cafe460e4538df79", "cafeba05b64d0f2b"],
 							"SetTrue": ["cafebe7e4706abf0"],
 							"Send": ["cafe39afeada60a9"]
 						}

@@ -149,10 +149,7 @@
 			"SubEntityOperation": [
 				"f8aee246394eaba3",
 				{
-					"AddProperty": [
-						"m_fVignetteMax",
-						{ "type": "float32", "value": 1.4 }
-					]
+					"AddProperty": ["m_fVignetteMax", { "type": "float32", "value": 1.4 }]
 				}
 			]
 		},
@@ -160,10 +157,7 @@
 			"SubEntityOperation": [
 				"f8aee246394eaba3",
 				{
-					"AddProperty": [
-						"m_fLabsDofAnamorphic",
-						{ "type": "float32", "value": -6.1 }
-					]
+					"AddProperty": ["m_fLabsDofAnamorphic", { "type": "float32", "value": -6.1 }]
 				}
 			]
 		},
@@ -171,10 +165,7 @@
 			"SubEntityOperation": [
 				"f8aee246394eaba3",
 				{
-					"AddProperty": [
-						"m_fLabsDofSwirl",
-						{ "type": "float32", "value": 1.7 }
-					]
+					"AddProperty": ["m_fLabsDofSwirl", { "type": "float32", "value": 1.7 }]
 				}
 			]
 		},
@@ -182,11 +173,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"RemoveEventConnection": [
-						"Instinct_Active",
-						"Poll",
-						"5c676fe82a3dd6ef"
-					]
+					"RemoveEventConnection": ["Instinct_Active", "Poll", "5c676fe82a3dd6ef"]
 				}
 			]
 		},
@@ -194,11 +181,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"AddEventConnection": [
-						"Instinct_Active",
-						"Poll",
-						"cafe71a2f87d4ca9"
-					]
+					"AddEventConnection": ["Instinct_Active", "Poll", "cafe71a2f87d4ca9"]
 				}
 			]
 		},
@@ -206,11 +189,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"AddEventConnection": [
-						"Instinct_Active",
-						"SetTrue",
-						"cafe37ccfd0fd420"
-					]
+					"AddEventConnection": ["Instinct_Active", "SetTrue", "cafe37ccfd0fd420"]
 				}
 			]
 		},
@@ -218,11 +197,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"RemoveEventConnection": [
-						"Instinct_Deactive",
-						"Poll",
-						"9d9fe2f5b8d760a7"
-					]
+					"RemoveEventConnection": ["Instinct_Deactive", "Poll", "9d9fe2f5b8d760a7"]
 				}
 			]
 		},
@@ -230,11 +205,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"AddEventConnection": [
-						"Instinct_Deactive",
-						"Poll",
-						"cafe84898346dc9d"
-					]
+					"AddEventConnection": ["Instinct_Deactive", "Poll", "cafe84898346dc9d"]
 				}
 			]
 		},
@@ -242,11 +213,7 @@
 			"SubEntityOperation": [
 				"05954fb97fba6a87",
 				{
-					"AddEventConnection": [
-						"Instinct_Deactive",
-						"SetFalse",
-						"cafe37ccfd0fd420"
-					]
+					"AddEventConnection": ["Instinct_Deactive", "SetFalse", "cafe37ccfd0fd420"]
 				}
 			]
 		},
@@ -2063,11 +2030,7 @@
 							"Reset": ["a249fc7f5cae541a"],
 							"BlendOut": ["c0e753642647c77e"],
 							"Disable": ["4c635f307cf72687"],
-							"In": [
-								"5f15b157fb9ff5f6",
-								"cafe6916b5976caf",
-								"cafe6ddaa742d8a9"
-							]
+							"In": ["5f15b157fb9ff5f6", "cafe6916b5976caf", "cafe6ddaa742d8a9"]
 						}
 					}
 				}

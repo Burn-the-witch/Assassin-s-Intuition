@@ -119,34 +119,19 @@
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"65871c53192d1053",
-				{ "RemovePropertyAlias": "m_vGlowCivilianFadeNearFar" }
-			]
+			"SubEntityOperation": ["65871c53192d1053", { "RemovePropertyAlias": "m_vGlowCivilianFadeNearFar" }]
 		},
 		{
-			"SubEntityOperation": [
-				"65871c53192d1053",
-				{ "RemovePropertyAlias": "m_vGlowContractFadeNearFar" }
-			]
+			"SubEntityOperation": ["65871c53192d1053", { "RemovePropertyAlias": "m_vGlowContractFadeNearFar" }]
 		},
 		{
-			"SubEntityOperation": [
-				"65871c53192d1053",
-				{ "RemovePropertyAlias": "m_vGlowEnemiesFadeNearFar" }
-			]
+			"SubEntityOperation": ["65871c53192d1053", { "RemovePropertyAlias": "m_vGlowEnemiesFadeNearFar" }]
 		},
 		{
-			"SubEntityOperation": [
-				"65871c53192d1053",
-				{ "RemovePropertyAlias": "m_vGlowGunsFadeNearFar" }
-			]
+			"SubEntityOperation": ["65871c53192d1053", { "RemovePropertyAlias": "m_vGlowGunsFadeNearFar" }]
 		},
 		{
-			"SubEntityOperation": [
-				"65871c53192d1053",
-				{ "RemovePropertyAlias": "m_vGlowSetPieceFadeNearFar" }
-			]
+			"SubEntityOperation": ["65871c53192d1053", { "RemovePropertyAlias": "m_vGlowSetPieceFadeNearFar" }]
 		},
 		{
 			"AddEntity": [

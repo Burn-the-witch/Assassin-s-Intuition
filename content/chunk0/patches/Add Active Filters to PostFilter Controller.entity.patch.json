@@ -2031,11 +2031,7 @@
 							"Reset": ["a249fc7f5cae541a"],
 							"BlendOut": ["c0e753642647c77e"],
 							"Disable": ["4c635f307cf72687"],
-							"In": [
-								"5f15b157fb9ff5f6",
-								"cafe04eaa513aa37",
-								"cafe583df7af8c37"
-							]
+							"In": ["5f15b157fb9ff5f6", "cafe04eaa513aa37", "cafe583df7af8c37"]
 						}
 					}
 				}

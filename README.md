@@ -6,4 +6,4 @@ Overhauls Instinct into a fully featured ability system inspired by 007 First Li
 
 ---
 
-`maxmods.InstinctOverhaul` v1.0.0, by Max. This README was automatically generated from the mod's manifest.
+`maxmods.InstinctOverhaul` v1.0.1, by Max. This README was automatically generated from the mod's manifest.
